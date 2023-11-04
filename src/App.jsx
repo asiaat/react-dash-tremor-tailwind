@@ -1,25 +1,35 @@
-import LeftColumn from "./components/LeftColumn";
+
 import Navbar from "./components/Navbar";
 import RightColumn from "./components/RightColumn";
 import Sidebar from "./components/Sidebar";
+import { 
+  createBrowserRouter, 
+  createRoutesFromElements, 
+  Route, 
+  RouterProvider 
+} from 'react-router-dom';
+
+import RootLayout from "./layouts/RootLayout";
+import LeftColumn from "./components/LeftColumn";
+import Dashboard from "./components/Dashboard";
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<RootLayout />}>
+      <Route index element={<Dashboard />}></Route>
+      
+      
+    </Route>
+  )
+)
+
+
 
 function App() {
   return (
-    <main className="flex">
-      <Sidebar />
-      <div className="flex flex-col flex-1 relative">
-        <Navbar />
-        <div className="grid md:grid-cols-3 grid-cols-1 w-full">
-          <div className="col-span-2">
-            <LeftColumn />
-          </div>
-          <div className="w-full">
-            <RightColumn />
-          </div>
-        </div>
-      </div>
-    </main>
-  );
+    <RouterProvider router={router} />
+  )
 }
+
 
 export default App;
