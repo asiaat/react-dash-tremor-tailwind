@@ -57,6 +57,22 @@ const TableSmartContract = () => {
     return sortableItems;
   }, [data, sortConfig]);
 
+  
+  const getExplorerUrl = (network, address) => {
+    switch (network) {
+      case 'ethereum':
+        return `https://etherscan.io/address/${address}`;
+      case 'polygon':
+        return `https://polygonscan.com/address/${address}`;
+      case 'solana':
+          return `https://explorer.solana.com/address/${address}`;
+      case 'tezos':
+          return `https://tzkt.io/${address}`;
+      default:
+        return '#'; // Või mingi vaikimisi URL
+    }
+  };
+
 
   return (
     <Card className="mt-4">
@@ -81,8 +97,12 @@ const TableSmartContract = () => {
           {sortedData.map((item, index) => (
             <TableRow key={index}>
               <TableCell>{item.collection_name}</TableCell>
+              
+
               <TableCell>
-                <Text><EthAddress address={item.contract_address} /></Text>
+                <a href={getExplorerUrl(item.network, item.contract_address)} target="_blank" rel="noopener noreferrer">
+                  <Text><EthAddress address={item.contract_address} /></Text>
+                </a>
               </TableCell>
               <TableCell>
                 <Text><EthAddress address={item.creator_address} /></Text>
