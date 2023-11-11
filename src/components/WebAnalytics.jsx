@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { BarList, Card, Title, Bold, Flex, Text } from "@tremor/react";
 
-const data = [
+const data1 = [
   {
     name: "Twitter",
     value: 456,
@@ -99,19 +99,54 @@ const data = [
   },
 ];
 
+
+const data = [
+{
+  network: "etherium",
+  count: 13
+},
+{
+  network: "polygon",
+  count: 9
+},
+{
+  network: "solana",
+  count: 1
+}
+];
+
+
+
 const WebAnalytics = () => {
+
+  /*
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetch('https://cyberplanet.tech/php/stat_networks.php') // Asenda see URL oma PHP skripti URL-iga
+      .then(response => response.json())
+      .then(data => {
+        setData(data); // Seadista laetud andmed
+      })
+      .catch(error => {
+        console.error('There was an error!', error);
+      });
+  }, []); // Tühi sõltuvuste massiiv tähendab, et see käivitatakse ainult komponendi laadimisel
+*/
+
+
   return (
     <Card className="max-w-full my-4">
-      <Title>Website Analytics</Title>
+      <Title>Network Analytics</Title>
       <Flex className="mt-4">
         <Text>
-          <Bold>Source</Bold>
+          <Bold>Network</Bold>
         </Text>
         <Text>
-          <Bold>Visits</Bold>
+          <Bold>Count</Bold>
         </Text>
       </Flex>
-      <BarList data={data} className="mt-2" />
+      <BarList data={data1} className="mt-2" />
     </Card>
   );
 };

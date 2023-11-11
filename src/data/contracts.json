@@ -1,0 +1,156 @@
+[
+    {
+      "collection_name": "Zerion DNA 1.0",
+      "description": "Zerion DNA is a first of a kind Dynamic NFT Avatar – a generative, living NFT that evolves over time to reflect your digital identity. Every wallet action renders unique attributes so that no two NFTs are alike. Wallet actions that will cause the NFT to evolve include buying and selling tokens, interacting with different networks and exploring the Zerion app.",
+      "network": "ethereum",
+      "contract": "0x932261f9Fc8DA46C4a22e31B45c4De60623848bF",
+      "creator": "",
+      "category": "PEPs",
+      "website": "https://zerion.io/"
+    },
+    {
+      "collection_name": "ChainLink: Airdrop Recipient",
+      "description": "",
+      "network": "polygon",
+      "contract": "0x9c66021bb6e54ad67adce73dfbb49ba198000bd8",
+      "creator": "",
+      "category": "",
+      "website": "https://opensea.io/collection/chainlink-token"
+    },
+    {
+      "collection_name": "Trait Swap - Dynamic NFTs (Old Contract)",
+      "description": "",
+      "network": "ethereum",
+      "contract": "",
+      "creator": "",
+      "category": "art",
+      "website": "https://opensea.io/collection/fancy-bear-trait-swap-v2"
+    },
+    {
+      "collection_name": "Leonardo Bonucci Dynamic NFT",
+      "description": "",
+      "network": "ethereum",
+      "contract": "",
+      "creator": "",
+      "category": "",
+      "website": "https://opensea.io/collection/leonardo-bonucci-dynamic-nft"
+    },
+    {
+      "collection_name": "Trait Swap - Dynamic NFTs",
+      "description": "",
+      "network": "ethereum",
+      "contract": "",
+      "creator": "",
+      "category": "",
+      "website": "https://opensea.io/collection/trait-swap-traits"
+    },
+    {
+      "collection_name": "Dynamic NFTs Moody_Ghost",
+      "description": "",
+      "network": "polygon",
+      "contract": "",
+      "creator": "",
+      "category": "art",
+      "website": "https://opensea.io/collection/moody-ghost"
+    },
+    {
+      "collection_name": "SlicedNFT",
+      "description": "",
+      "network": "ethereum",
+      "contract": "",
+      "creator": "",
+      "category": "PEPs",
+      "website": "https://opensea.io/collection/slicednft"
+    },
+    {
+      "collection_name": "Virtue Animation Studio",
+      "description": "",
+      "network": "ethereum",
+      "contract": "",
+      "creator": "",
+      "category": "art",
+      "website": "https://opensea.io/collection/virtuestudios"
+    },
+    {
+      "collection_name": "Animathereum",
+      "description": "",
+      "network": "ethereum",
+      "contract": "",
+      "creator": "",
+      "category": "PEPs",
+      "website": "https://opensea.io/collection/animathereum"
+    },
+    {
+      "collection_name": "Nightmare Imp's Tricks",
+      "description": "",
+      "network": "ethereum",
+      "contract": "",
+      "creator": "",
+      "category": "",
+      "website": "https://opensea.io/collection/nightmareimpstricks"
+    },
+    {
+      "collection_name": "Life in Our Minds",
+      "description": "",
+      "network": "ethereum",
+      "contract": "0xb0F4248D42B187046953498001999f5aC84aB66b",
+      "creator": "",
+      "category": "",
+      "website": "https://rarible.com/life-in-our-minds/items"
+    },
+    {
+      "collection_name": "blue dynamism",
+      "description": "",
+      "network": "ethereum",
+      "contract": "0x9b6892ccc1ce7664b3ce484d40aba4973207e45f",
+      "creator": "",
+      "category": "",
+      "website": "https://rarible.com/collection/0x9b6892ccc1ce7664b3ce484d40aba4973207e45f/items"
+    },
+    {
+      "collection_name": "THE MAFIA ANIMALS SOLDIERS",
+      "description": "",
+      "network": "ethereum",
+      "contract": "0x99f419934192f8de7bf53b490d5bdb88527654bf",
+      "creator": "",
+      "category": "",
+      "website": "https://rarible.com/the-mafia-animals-soldiers-/items"
+    },
+    {
+      "collection_name": "Animated Perspectives",
+      "description": "",
+      "network": "tezos",
+      "contract": "KT1SKrQSR3VBKdEGD4WwWREERm9FVD1dkZoy",
+      "creator": "",
+      "category": "",
+      "website": "https://rarible.com/collection/tezos/KT1SKrQSR3VBKdEGD4WwWREERm9FVD1dkZoy/items"
+    },
+    {
+      "collection_name": "Dynamic Duelers",
+      "description": "",
+      "network": "ethereum",
+      "contract": "0xa55130dca268e28aca298b12454f7612ae4910a3",
+      "creator": "",
+      "category": "",
+      "website": "https://rarible.com/collection/0xa55130dca268e28aca298b12454f7612ae4910a3/items"
+    },
+    {
+      "collection_name": "Dynamic Dexbots",
+      "description": "",
+      "network": "ethereum",
+      "contract": "0x2a60de01ae712ae258c6dc3e526ecf26e83216ec",
+      "creator": "",
+      "category": "",
+      "website": "https://rarible.com/dynamicdexbots/items"
+    },
+    {
+      "collection_name": "Decimus Dynamics Genesis",
+      "description": "",
+      "network": "solana",
+      "contract": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "creator": "",
+      "category": "PEFs",
+      "website": "https://opensea.io/collection/decimus-dynamics-genesis"
+    }
+]
+  
