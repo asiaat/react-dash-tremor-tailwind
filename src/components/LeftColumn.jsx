@@ -12,8 +12,9 @@ const LeftColumn = () => {
         <CardItem />
       </div>
       <div className="flex-auto w-full">
+      <TableSmartContract />
         <AreaChartComponent />
-        <TableSmartContract />
+        
        
       </div>
     </div>
