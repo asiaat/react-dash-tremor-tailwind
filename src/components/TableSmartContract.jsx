@@ -103,6 +103,7 @@ const TableSmartContract = () => {
                 <a href={getExplorerUrl(item.network, item.contract_address)} target="_blank" rel="noopener noreferrer">
                   <Text><EthAddress address={item.contract_address} /></Text>
                 </a>
+                
               </TableCell>
               <TableCell>
                 <Text><EthAddress address={item.creator_address} /></Text>
