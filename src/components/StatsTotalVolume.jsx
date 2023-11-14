@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { BadgeDelta, Card, Flex, Metric, Text } from "@tremor/react";
 
-const StatsWholeTxs = () => {
+const StatsTotalVolume = () => {
 
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch('https://cyberplanet.tech/php/stats_total_sales.php') 
+    fetch('https://cyberplanet.tech/php/stats_total_volume.php') 
       .then(response => response.json())
       .then(data => {
         setData(data); 
@@ -19,12 +19,12 @@ const StatsWholeTxs = () => {
   return (
     <Card className="w-xs" decoration="top" decorationColor="indigo">
       <Flex justifyContent="between" alignItems="center">
-        <Text >  TOTAL SALES </Text>
+        <Text >  TOTAL VOLUME </Text>
         <BadgeDelta deltaType="moderateIncrease">+25.7% per m</BadgeDelta>
       </Flex>
-      <Metric>{data.value}</Metric>
+      <Metric>{data.value} ETH</Metric>
     </Card>
   );
 };
 
-export default StatsWholeTxs;
+export default StatsTotalVolume;
