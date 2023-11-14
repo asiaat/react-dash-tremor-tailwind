@@ -14,9 +14,13 @@ import {
 } from "@tremor/react";
 import EthAddress from "./EthAddress";
 import SortableTableHeader from './SortableTableHeader'; // Lisage see rida
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faExpandAlt, faCompressAlt } from '@fortawesome/free-solid-svg-icons';
 
 
-const TableSmartContract = () => {
+const TableSmartContract = ({ isTableExpanded, toggleTableSize }) => {
+
+  
   const [data, setData] = useState([]);
   const [sortConfig, setSortConfig] = useState({ key: null, direction: null });
 
@@ -75,7 +79,15 @@ const TableSmartContract = () => {
 
 
   return (
+    <div className={`w-full ${isTableExpanded ? 'max-w-none' : 'max-w-6xl'} relative`}>
+    
     <Card className="mt-4">
+    <button 
+      onClick={toggleTableSize} 
+      className="absolute top-0 right-0 m-2 text-2xl text-white hover:text-gray-300"
+      >
+        <FontAwesomeIcon icon={isTableExpanded ? faCompressAlt : faExpandAlt} />
+      </button>
       <Title>Dynamic Smart Contracts</Title>
       <Table className="mt-5">
         <TableHead>
@@ -124,6 +136,7 @@ const TableSmartContract = () => {
         </TableBody>
       </Table>
     </Card>
+    </div>
   );
 };
 

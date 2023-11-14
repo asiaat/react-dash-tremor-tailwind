@@ -1,13 +1,15 @@
 import React from "react";
 import AreaChartComponent from "./AreaChartComponent";
 import TableSmartContract from "./TableSmartContract";
-import Sidebar from "./Sidebar";
-import CardItem from "./CardItem";
 import StatsCountItems from "./StatsCountItems";
 import StatsWholeTxs from "./StatsWholeTxs";
 import StatsTotalVolume from "./StatsTotalVolume";
 
-const LeftColumn = () => {
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faExpandAlt, faCompressAlt } from '@fortawesome/free-solid-svg-icons';
+
+
+const LeftColumn = ({ isTableExpanded, toggleTableSize }) => {
   return (
     <div className="w-full flex flex-col justify-between p-2">
       
@@ -17,11 +19,16 @@ const LeftColumn = () => {
         <StatsWholeTxs />
         
       </div>
-      <div className="flex-auto w-full">
-      <TableSmartContract />
-      <AreaChartComponent />
-
+      
+      
+    <div className="flex-auto w-full">
+        <TableSmartContract isTableExpanded={isTableExpanded} toggleTableSize={toggleTableSize} />
+        {!isTableExpanded && <AreaChartComponent />}
       </div>
+
+      <button onClick={toggleTableSize}>
+        {isTableExpanded ? 'smaller' : 'bigger'}
+      </button>
     </div>
   );
 };
